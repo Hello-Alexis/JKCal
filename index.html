@@ -19,7 +19,7 @@
     }
   
     .container {
-      max-width: 100%; /* ใช้ความกว้างเต็ม */
+      max-width: 100%;
       margin-top: 30px;
       padding-left: 15px;
       padding-right: 15px;
@@ -128,11 +128,11 @@
     }
   
     .card {
-      width: 48%;  /* ทำให้คอลัมน์ทั้งสองเท่ากัน */
+      width: 48%;
     }
   
     .card-summary {
-      width: 48%;  /* ทำให้คอลัมน์ทั้งสองเท่ากัน */
+      width: 48%;
     }
   
     #sendInput,
@@ -162,7 +162,7 @@
       color: red;
     }
   
-    /* Media Queries สำหรับมือถือและแท็บเล็ต */
+    /* ปรับให้ตารางใหญ่ขึ้นในมือถือและแท็บเล็ต */
     @media (max-width: 768px) {
       .container {
         padding-left: 10px;
@@ -198,12 +198,23 @@
       .textarea-container {
         flex-direction: column;
       }
+  
+      /* เพิ่มขนาดตาราง */
+      .table {
+        width: 100%;
+        font-size: 12px; /* ปรับขนาดฟอนต์ให้เหมาะสม */
+      }
+  
+      .table th, .table td {
+        padding: 8px;  /* เพิ่มระยะห่างให้ดูสบายตา */
+      }
     }
   
+    /* ปรับแต่งมือถือ */
     @media (max-width: 480px) {
       .table th,
       .table td {
-        font-size: 10px;
+        font-size: 10px; /* ขนาดฟอนต์เล็กลง */
       }
   
       .grand-total {
@@ -225,11 +236,22 @@
       }
   
       .card-summary {
-        width: 100%; /* ทำให้คอลัมน์สรุปเป็นเต็มความกว้าง */
+        width: 100%; /* ทำให้คอลัมน์สรุปเต็มความกว้าง */
         margin-top: 20px;
+      }
+  
+      /* ปรับขนาดตาราง */
+      .table {
+        width: 100%;
+        font-size: 12px;
+      }
+  
+      .table th, .table td {
+        padding: 6px; /* ลดระยะห่างสำหรับหน้าจอเล็ก */
       }
     }
   </style>
+  
   
 </head>
 
